@@ -12,6 +12,6 @@ SQLcl (sql) would be a better alternative _(since it supports JSON exports and i
 
 ```bash
 doker images | grep sql
-oraclelinux9-sqlplus                              latest         a80ff714d54f   3 hours ago     142MB
+oraclelinux9-sqlplus                              latest         a80ff714d54f   3 hours ago     549MB
 container-registry.oracle.com/database/sqlcl      latest         0bc1f2f753f4   3 weeks ago     1.64GB
 ```
