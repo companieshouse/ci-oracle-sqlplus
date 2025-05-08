@@ -6,17 +6,14 @@
 
 FROM oraclelinux:9-slim
 
-# Install system dependencies.
-# (pinned versions to address Hadolint DL3041 warning)
-
+# Install system dependencies
 RUN microdnf install -y \
-        libaio-0.3.112-2.el9 \
-        wget-1.21.1-4.el9 \
-        unzip-6.0-55.el9 \
-        jq-1.6-17.el9 \
-        glibc-langpack-en-2.34-98.el9 && \
+        libaio \
+        wget \
+        unzip \
+        jq \
+        glibc-langpack-en && \
     microdnf clean all
-
 
 # Set environment variables
 ENV ORACLE_HOME=/usr/lib/oracle/21/client64 \
