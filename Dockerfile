@@ -26,4 +26,4 @@ RUN wget --progress=dot https://download.oracle.com/otn_software/linux/instantcl
     rpm -ivh oracle-instantclient-basic-*.rpm oracle-instantclient-sqlplus-*.rpm && \
     rm -f oracle-instantclient-*.rpm
 
-CMD ["sqlplus", "-v"]
+ENTRYPOINT ["bash", "-c"]
