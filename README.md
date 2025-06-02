@@ -2,11 +2,12 @@
 
 A Docker base image containing SQL\*Plus (sqlplus), to run SQL commands against an Oracle database.
 
-This image ships with both `sh` and `bash` and also `jq` and other utilities.
+This image ships with both `sh`, `bash` and also `jq` and other utilities.
 In particular:
-`jq` was added because `sqlplus` doesn't support native JSON exports.
-`diffutils` was added to have `diff`
-`util-linux`, was added to have `column`
+
+- `jq` was added because `sqlplus` doesn't support native JSON exports.
+- `diffutils` was added to have `diff`.
+- `util-linux`, was added to have `column`.
 
 ## SQL\*Plus vs Oracle SQLcl (SQL Command Line)
 
