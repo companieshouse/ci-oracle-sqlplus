@@ -12,6 +12,8 @@ RUN microdnf install -y \
         wget \
         unzip \
         jq \
+        diffutils \
+        util-linux \
         glibc-langpack-en && \
     microdnf clean all
 
